@@ -1,0 +1,19 @@
+<link href='final_form.css' rel='stylesheet' type='text/css'>
+<script src="validate.js"></script>
+
+<form action="connect.php" method="post" id="final" name="final" onsubmit="Validate()">
+<h4> Login Information </h4>
+<input class="name" type="text" placeholder="Enter Fullname" id="box" name="name" required/>
+<input type="text" placeholder="Enter your e-mail" name="email" id="box" required/>
+Gender :&nbsp;&nbsp;
+Male&nbsp;<input type = 'radio' name='gender' value = 'male'>&nbsp;&nbsp;&nbsp;
+Female&nbsp;<input type = 'radio' name='gender' value = 'female'><br><br>
+<span>City :</span>&nbsp;&nbsp;<select name='city'>
+<option value = "Nagpur">Nagpur</option>
+<option value = "Mumbai" >Mumbai</option>
+<option value = "Pune" >Pune</option>
+<option value = "Jaipur" >Jaipur</option>
+<option value = "Manipur" >Manipur</option></select>
+<li><a href="display.php">Look at the Database</a></li><br><br>
+<input class="button" type="submit" value="Enter Data" form="final"/>
+</form>
